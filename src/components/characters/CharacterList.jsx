@@ -6,7 +6,7 @@ export default function CharacterList({ characters }) {
     return (
         <>
             <h2>Harry Potter Character List</h2>
-            <ul aria-label='list' className='item-list'>
+            <ul aria-label='list'>
                 {characters.map((char) => {
                     return (
                         <li key={char.name}>
