@@ -5,7 +5,7 @@ export default function CharacterDetail({ name, image, house, alive, ancestry, p
     return (
         <div className={style.detail}>
             <h3>{name}</h3>
-            <img className={style.detailImg} src={image} />
+            <img className={style.detailImg} src={image} alt={'character image'} />
             <p>{house ? `${house} House` : 'No Hogwarts House'}</p>
             <p>{alive ? 'Still alive!' : `they's ded....`}</p>
             <p>Ancestry: {ancestry ? ancestry : 'Unknown'}</p>
