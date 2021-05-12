@@ -14,11 +14,6 @@ export default function CharacterList({ characters }) {
                                 name={char.name}
                                 image={char.image}
                                 house={char.house}
-                                alive={char.alive.toString()}
-                                ancestry={char.ancestry}
-                                patronus={char.patronus}
-                                species={char.species}
-                                wand={char.wand}
                             />
                         </li>
                     )
