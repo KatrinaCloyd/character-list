@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    background-color: #740001;
+    color: #C0C0C0;
+  }
+  ul{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      list-style-type: none;
+      padding: 10px;
+  }
+
+ li{
+      width: 200px;
+      height: 250px;
+      background-color: #D3A625;
+      padding: 10px;
+      margin: 10px;
+  }
+
+.list-img{
+      width: 100px;
+  }
