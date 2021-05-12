@@ -12,7 +12,7 @@ describe('harry potter character list page', () => {
         );
         screen.getByText('Loading...');
 
-        const list = await screen.findByRole('list');
+        const list = await screen.findByRole('list', { name: 'char-list' });
         expect(list).not.toBeEmptyDOMElement();
     });
 })
