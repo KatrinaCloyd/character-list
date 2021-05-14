@@ -4,9 +4,11 @@ import HpDetailContainer from './hpDetailContainer';
 
 describe('harry potter character list page', () => {
     it('renders a list of harry potter characters to the screen', async () => {
-        render(<HpDetailContainer />);
+        render(<HpDetailContainer match={{ params: { name: 'Harry Potter' } }} />);
+
         screen.getByText('Loading...');
-        // await screen.findByAltText('character image');
-        //not sure how to get a url param into the test here... 
+
+        await screen.findByAltText('character image');
+        await screen.getByText('Harry Potter');
     });
 })
