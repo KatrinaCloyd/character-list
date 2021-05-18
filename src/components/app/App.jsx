@@ -4,8 +4,8 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import HpListContainer from '../../containers/HpListContainer';
-import HpDetailContainer from '../../containers/HpDetailContainer';
+import HpListContainer from '../../containers/HpListContainer.jsx';
+import HpDetailContainer from '../../containers/HpDetailContainer.jsx';
 
 export default function App() {
   return (
