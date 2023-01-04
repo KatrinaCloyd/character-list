@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import HpListContainer from '../../containers/HpListContainer';
 import HpDetailContainer from '../../containers/HpDetailContainer';
+import SpellListContainer from '../../containers/SpellListContainer';
 
 export default function App() {
   return (
@@ -14,6 +15,10 @@ export default function App() {
         <Route
           path='/'
           exact render={(routerProps) => <HpListContainer {...routerProps} />}
+        />
+        <Route
+          path='/spells'
+          exact render={(routerProps) => <SpellListContainer {...routerProps} />}
         />
         <Route
           path='/search/:name'

@@ -13,3 +13,13 @@ export const getHPcharacters = async () => {
         alive: char.alive
     }));
 }
+
+export const getHPspells = async () => {
+    const res = await fetch('https://hp-api.onrender.com/api/spells');
+    const spellArray = await res.json();
+
+    return spellArray.map((spell) => ({
+        name: spell.name,
+        description: spell.description
+    }));
+}

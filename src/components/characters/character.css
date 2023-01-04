@@ -4,7 +4,7 @@ body {
     color: #C0C0C0;
 }
 
-.listPg, .detailPg{
+.listPg, .detailPg, .spellPg{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,6 +43,26 @@ li{
       text-align: center;
 }
 
+.spell{
+    width: 50%;
+    background-color: #D3A625;
+    color: #740001;
+    font-weight: 900;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: left;
+    padding: 30px;
+}
+
+.info{
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+    display: block;
+    margin: 10px;
+    margin-inline-start: 30px;
+}
+
 h3{
     background-color: #D3A625;
     color: #740001;
@@ -55,6 +75,10 @@ p{
     margin: 5px;
 }
 
-a:link{
+a{
+    color: #D3A625;
     text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
 }
