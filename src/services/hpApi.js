@@ -1,5 +1,5 @@
 export const getHPcharacters = async () => {
-    const res = await fetch('https://hp-api.herokuapp.com/api/characters');
+    const res = await fetch('https://hp-api.onrender.com/api/characters');
     const charArray = await res.json();
 
     return charArray.map((char) => ({
